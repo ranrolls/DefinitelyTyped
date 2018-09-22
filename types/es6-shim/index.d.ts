@@ -609,19 +609,19 @@ interface WeakMapConstructor {
 
 declare var WeakMap: WeakMapConstructor;
 
-interface WeakSet<T> {
-    add(value: T): WeakSet<T>;
-    delete(value: T): boolean;
-    has(value: T): boolean;
-}
+//interface WeakSet<T> {
+//    add(value: T): WeakSet<T>;
+//    delete(value: T): boolean;
+//    has(value: T): boolean;
+//}
 
-interface WeakSetConstructor {
-    new <T>(): WeakSet<T>;
-    new <T>(iterable: IterableShim<T>): WeakSet<T>;
-    prototype: WeakSet<any>;
-}
+//interface WeakSetConstructor {
+//    new <T>(): WeakSet<T>;
+//    new <T>(iterable: IterableShim<T>): WeakSet<T>;
+//    prototype: WeakSet<any>;
+//}
 
-declare var WeakSet: WeakSetConstructor;
+//declare var WeakSet: WeakSetConstructor;
 
 declare namespace Reflect {
     function apply(target: Function, thisArgument: any, argumentsList: ArrayLike<any>): any;
@@ -649,7 +649,7 @@ declare module "es6-shim" {
     var Map: MapConstructor;
     var Set: SetConstructor;
     var WeakMap: WeakMapConstructor;
-    var WeakSet: WeakSetConstructor;
+    //var WeakSet: WeakSetConstructor;
     var Promise: PromiseConstructor;
     namespace Reflect {
         function apply(target: Function, thisArgument: any, argumentsList: ArrayLike<any>): any;
